@@ -1,0 +1,15 @@
+1- step
+
+$ ssh -i wagner.pem ubuntu@50.19.28.238  - RancherServer - HOST A
+$ ssh -i wagner.pem ubuntu@3.80.109.40  - k8s-1         - HOST B
+$ ssh -i wagner.pem ubuntu@3.90.219.177  - k8s-2         - HOST C
+$ ssh -i wagner.pem ubuntu@34.228.111.216  - k8s-3         - HOST D
+
+$ sudo su
+$ curl https://releases.rancher.com/install-docker/19.03.sh | sh
+$ usermod -aG docker ubuntu
+
+
+or :
+
+https://docs.docker.com/engine/install/ubuntu/
